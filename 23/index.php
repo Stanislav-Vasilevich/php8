@@ -3,18 +3,18 @@
 // 1 homeworks
 $nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-for ($i = 0; $i < 10; $i++) {
+for ($i = 0; $i < count($nums); $i++) {
 	if ($nums[$i] % 2 !== 0) {
 		continue;
-	} else {
-		echo $nums[$i] . '<br>';
 	}
+    
+    if($nums[$i] > 0) echo $nums[$i] . '<br>';
 }
 
 echo '<br>';
 
-for ($i = 0; $i < 10; $i++) {
-	if ($nums[$i] % 2 === 0) {
+for ($i = 0; $i < count($nums); $i++) {
+	if ($nums[$i] % 2 === 0 && $nums[$i] > 0) {
 		echo $nums[$i] . '<br>';
 	}
 }
