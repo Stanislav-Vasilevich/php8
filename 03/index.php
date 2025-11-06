@@ -11,13 +11,15 @@
 </head>
 <body>
 <a href="/">Перейти на главную</a>
-<?php echo '<p>Hello World!</p>'?>
-<?= '<p>Hello World!!</p>' ?>
-<?php // echo 'Hello World!!!'; ?>
-<?php # echo 'Hello World!!!'; ?>
+<?php echo '<p>Стандартный вывод текста в php</p>'?>
+<?= '<p>Вывод без echo</p>' ?>
+<?php // echo 'Однострочный комментарий'; ?>
+<?php # echo 'Комментарий в стиле Unix'; ?>
 <?php
-/* echo 'Hello World!!!!';
-echo 'Hello World!!!!'; */
+  /*
+    echo 'Многострочный';
+    echo 'комментарий';
+  */
 ?>
 </body>
 </html>
