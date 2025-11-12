@@ -11,25 +11,26 @@
 </head>
 <body>
 <?php
-$phone = 10;
+	$phone = 10;
 
-function get_sum($a = 10, $b = 2)
-{
-    echo $a + $b;
-}
+	function get_sum($a = 10, $b = 2)
+	{
+		echo $a + $b;
+	}
 
-get_sum();
+	get_sum();
 
-echo '<br>';
+	echo '<br>';
 
-function get_phone($a) {
-    global $phone;
-    echo $phone += 2;
-    echo '<br>';
-    echo $a;
-}
+	function get_phone($a)
+	{
+		global $phone;
+		echo $phone += 2;
+		echo '<br>';
+		echo $a;
+	}
 
-get_phone($phone);
+	get_phone($phone);
 ?>
 </body>
 </html>

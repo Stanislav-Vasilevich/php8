@@ -13,28 +13,28 @@
 <h1>Арифметические операторы.</h1>
 
 <?php
-$num = -32;
+	$num = -32;
 
-echo '-$num: ', -$num;
-echo '<br>';
-var_dump('10'); // string(2) "10"
-echo '<br>';
-var_dump(+'-10'); // int(-10)
-echo '<br>';
-var_dump(-'-10'); // int(10)
-echo '<br>';
-var_dump(-'10'); // int(-10)
-echo '<br>';
-var_dump(1 + '2t'); // Warning и вычисление php >= 8.0 версии и Notice php >= 7.0 и php < 8.0 версии будет int(3)
-// var_dump(1 + 't2'); // fatal error
-echo '<br>';
-var_dump(20 % 7); // int(6)
-echo '<br>';
-var_dump(-20 % 7); // int(-6)
-echo '<br>';
-var_dump(20 % -7); // int(6), если второе число отрицательное, все равно получаем положительное
-echo '<br>';
-var_dump(2 ** 3); // int(8)
+	echo '-$num: ', -$num;
+	echo '<br>';
+	var_dump('10'); // string(2) "10"
+	echo '<br>';
+	var_dump(+'-10'); // int(-10)
+	echo '<br>';
+	var_dump(-'-10'); // int(10)
+	echo '<br>';
+	var_dump(-'10'); // int(-10)
+	echo '<br>';
+	var_dump(1 + '2t'); // Warning и вычисление php >= 8.0 версии и Notice php >= 7.0 и php < 8.0 версии будет int(3)
+	// var_dump(1 + 't2'); // fatal error
+	echo '<br>';
+	var_dump(20 % 7); // int(6)
+	echo '<br>';
+	var_dump(-20 % 7); // int(-6)
+	echo '<br>';
+	var_dump(20 % -7); // int(6), если второе число отрицательное, все равно получаем положительное
+	echo '<br>';
+	var_dump(2 ** 3); // int(8)
 ?>
 </body>
 </html>

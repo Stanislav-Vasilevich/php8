@@ -1,48 +1,49 @@
-<?php error_reporting(-1)
-function sum(...$nums): void
-{
-	static $res = 0;
+<?php error_reporting(-1);
+    function sum(...$nums): void
+    {
+        static $res = 0;
 
-    foreach ($nums as $num) {
-        $res += $num;
+        foreach ($nums as $num) {
+            $res += $num;
+        }
+
+        echo $res . '<br>';
     }
 
-    echo $res . '<br>';
-}
+    sum(1, 2, 3, 4, 5);
 
-sum(1, 2, 3, 4, 5);
+    function test(): void
+    {
+        static $a = 0;
+        echo $a . '<br>';
+        $a++;
+    }
 
-function test(): void
-{
-    static $a = 0;
-    echo $a . '<br>';
-    $a++;
-}
+    test();
+    test();
+    test();
 
-test();
-test();
-test();
+    function sum_int(int $a, int $b, int $c): void
+    {
+        echo $a + $b + $c . '<br>';
+    }
 
-function sum_int(int $a, int $b, int $c): void
-{
-    echo $a + $b + $c . '<br>';
-}
+    sum_int(2, 3.5, 5);
 
-sum_int(2, 3.5, 5);
+    function sum_hi(int $a, int $b, int $c): int
+    {
+        $res = $a + $b + $c;
+        echo $res;
+        return $res;
+    }
 
-function sum_hi(int $a, int $b, int $c): int
-{
-    $res = $a + $b + $c;
-    echo $res;
-	return $res;
-}
+    sum_hi(3, 3, 5);
 
-sum_hi(3, 3, 5);
+    echo '<br>';
 
-echo '<br>';
+    function name_argument($text, $name)
+    {
+        return $text . ' ' . $name . '!';
+    }
 
-function name_argument($text, $name) {
-    return $text . ' ' . $name . '!';
-}
-
-echo name_argument(name: 'Stanislav', text: 'Hello');
+    echo name_argument(name: 'Stanislav', text: 'Hello');

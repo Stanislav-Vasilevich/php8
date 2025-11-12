@@ -1,6 +1,6 @@
 <?php
 	error_reporting(-1);
-	
+
 	$title = 'Урок 4. Переменные';
 	$winnie_the_pooh = 'Hello I\'am Winnie';
 	$count = 1;
@@ -14,15 +14,15 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?= $title ?></title>
-    <style>
-      div {
-        margin: 0 0 20px;
-      }</style>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title><?= $title ?></title>
+	<style>
+    div {
+      margin: 0 0 20px;
+    }</style>
 </head>
 <body>
 <h1>Переменные, вывод переменных, подключение вывода ошибок</h1>

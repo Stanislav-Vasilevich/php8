@@ -13,15 +13,15 @@
 <h1>Управляющие конструкции if else</h1>
 
 <?php
-$time = 0;
+	$time = 0;
 
-if($time > 0 && $time <= 7) {
-	echo 'dark';
-} elseif($time > 7 && $time <= 18) {
-	echo 'light';
-} else {
-	echo 'dark';
-}
+	if ($time > 0 && $time <= 7) {
+		echo 'dark';
+	} elseif ($time > 7 && $time <= 18) {
+		echo 'light';
+	} else {
+		echo 'dark';
+	}
 ?>
 </body>
 </html>
