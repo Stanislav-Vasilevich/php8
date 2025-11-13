@@ -16,22 +16,18 @@
 		if ($i > 8) break;
 		echo "<h1>{$i}</h1>";
 	}
-?>
 
-<?php
-	echo 'br';
-
-	$i = 1;
+	$item = 1;
 
 	while (true) {
-		echo "$i<br>";
+		echo "$item<br>";
 
-		if ($i === 20) {
+		if ($item === 20) {
 			echo 'Число найдено!';
 			break;
 		}
 
-		$i++;
+		$item++;
 	}
 ?>
 </body>
